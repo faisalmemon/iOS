@@ -22,18 +22,18 @@ We use Carthage for dependency management. If you don't have Carthage installed 
 
 You can also run the unit tests to do the above and ensure everything seems in order: `./run_tests.sh`
 
+### SwiftLint
+We use [SwifLint](https://github.com/realm/SwiftLint) for enforcing Swift style and conventions, so you'll need to [install it](https://github.com/realm/SwiftLint#installation).
+
+### Fonts
+We use Proxima Nova fonts which are proprietary and cannot be committed to source control, see [fonts](https://github.com/duckduckgo/iOS/tree/develop/fonts/licensed). 
+
 ### Developer details
 If you're not part of the DuckDuckGo team, you should provide your Apple developer account id, app id, and group id prefix in an `ExternalDeveloper.xcconfig` file. To do that:
 
  1. Run `cp Configuration/DuckDuckGoDeveloper.xcconfig Configuration/ExternalDeveloper.xcconfig`
  2. Edit `Configuration/ExternalDeveloper.xcconfig` and change the values of all fields
  3. Clean and rebuild the project
-
-### SwiftLint
-We use [SwifLint](https://github.com/realm/SwiftLint) for enforcing Swift style and conventions, so you'll need to [install it](https://github.com/realm/SwiftLint#installation).
-
-### Fonts
-We use Proxima Nova fonts which are proprietary and cannot be committed to source control, see [fonts](https://github.com/duckduckgo/iOS/tree/develop/fonts/licensed). 
 
 ## Debugging
 
