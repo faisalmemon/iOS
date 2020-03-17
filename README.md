@@ -14,19 +14,20 @@ We use submodules, so you will need to bring them in to the project in order to 
 
 Run `git submodule update --init --recursive`
 
+### Dependencies
+We use Carthage for dependency management. If you don't have Carthage installed refer to [Installing Carthage](https://github.com/Carthage/Carthage#installing-carthage).
+
+- Change directory to the top level source code directory.
+- Run `carthage bootstrap --platform iOS` before opening the project in Xcode
+
+You can also run the unit tests to do the above and ensure everything seems in order: `./run_tests.sh`
+
 ### Developer details
 If you're not part of the DuckDuckGo team, you should provide your Apple developer account id, app id, and group id prefix in an `ExternalDeveloper.xcconfig` file. To do that:
 
  1. Run `cp Configuration/DuckDuckGoDeveloper.xcconfig Configuration/ExternalDeveloper.xcconfig`
  2. Edit `Configuration/ExternalDeveloper.xcconfig` and change the values of all fields
  3. Clean and rebuild the project
-
-### Dependencies
-We use Carthage for dependency management. If you don't have Carthage installed refer to [Installing Carthage](https://github.com/Carthage/Carthage#installing-carthage).
-
-Run `carthage bootstrap --platform iOS` before opening the project in Xcode
-
-You can also run the unit tests to do the above and ensure everything seems in order: `./run_tests.sh`
 
 ### SwiftLint
 We use [SwifLint](https://github.com/realm/SwiftLint) for enforcing Swift style and conventions, so you'll need to [install it](https://github.com/realm/SwiftLint#installation).
